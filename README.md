@@ -48,3 +48,4 @@ also you can enable logs when a user gets an error and a user creates a game wit
 
 # end
 anyways have fun trying to figure how to make this shit work
+also credits to [roblox-thot](https://github.com/Roblox-Thot/captchaCodeMakerV2) for the fix on the captcha shit patch
