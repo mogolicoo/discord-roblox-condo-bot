@@ -4,13 +4,13 @@ a discord bot that makes roblox condos fully open sourced
 (probably broken)
 
 # hwo it swork
-bot sends user captcha
-user solves captcha an dbot creates account roblox
-bot uses roblox account and uploads a module
-bot creates a random script and a random place 
-bot updates starter place with the random place with all random shit
-bot sends place to user
-user gets lego sex
+1. bot sends user captcha
+2. user solves captcha an dbot creates account roblox
+3. bot uses roblox account and uploads a module
+4. bot creates a random script and a random place 
+5. bot updates starter place with the random place with all random shit
+6. bot sends place to user
+7. user gets lego sex
 
 # how to sethiup
 set a enviroment key named "TOKEN" with your discord bot token
