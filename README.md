@@ -1,5 +1,5 @@
-# discord-condo-bot
-a discord bot that makes roblox condos fully open sourced
+# discord-roblox-condo-bot
+a discord bot that uploads roblox condos fully open sourced
 
 (ugly, old, spaghetti and broken)
 
