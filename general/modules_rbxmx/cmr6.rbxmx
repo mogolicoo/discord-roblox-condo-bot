@@ -1,1 +1,36 @@
 this is a mainmodule with a map loader thingy in it, yeah it's too big for github sooo yeah.
+however, the mainmodule source is this:
+
+return function(st)
+	if st == "hello!" then
+		pcall(function()
+			workspace.Terrain:Clear()
+		end)
+		local kl = script.Services:GetChildren();
+		for _,v in next, kl do
+			if v.Name ~= "ServerScriptService" and v.Name ~= "ReplicatedStorage" then
+				pcall(function()
+					game:GetService(v.Name):ClearAllChildren();
+				end)
+			end
+			if v.Name == "Lighting" then
+				for _, obj in next, v:GetChildren() do
+					if obj:IsA("ValueBase") and game.Lighting[obj.Name] then
+						game.Lighting[obj.Name] = obj.Value
+					else
+						obj:Clone().Parent = game:GetService(v.Name)
+					end
+				end
+			else 
+				for _,obj in next, v:GetChildren() do
+					if obj:IsA("ScreenGui") then
+						obj.ResetOnSpawn = false
+					end
+					obj:Clone().Parent = game:GetService(v.Name)
+				end
+			end
+		end
+	end
+end
+
+so if you know what are you doing you can make your own module and blah blah blah
