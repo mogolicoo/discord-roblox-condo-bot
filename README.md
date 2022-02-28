@@ -1,7 +1,7 @@
 # discord-condo-bot
 a discord bot that makes roblox condos fully open sourced
 
-(probably broken)
+(ugly, old and broken)
 
 # hwo it swork
 1. bot sends user captcha
