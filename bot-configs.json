@@ -1,0 +1,21 @@
+{
+	"loggingEnabled": true,
+	"gamesChannelId": "927620276320100403",
+	"errorsChannelId": "927620288265465977",
+	
+	"embedFooter": "🐱‍💻 Bot hecho por Misael y XYZ Games.",
+
+	"successMessage": "🎉 El juego se ha realizado con exito! 🎉",
+
+	"errorMessages": {
+		"timedoutMessage": "[⏰] Operación cancelada debido a inactividad.",
+		"ratelimitMessage": "**Hay muchas personas intentando usar el bot, porfavor intentelo mas tarde.**",
+		"internalErrorMessage": "Hubo un error interno, porfavor intentelo mas tarde.",
+
+		"creatingAccountErrorMessage": "Hubo un error inesperado al crear la cuenta.\nPorfavor intentelo de nuevo.",
+		"changingPlaceConfigErrorMessage": "Hubo un error inesperado al actualizar la información del place.\nPorfavor intentelo de nuevo.",
+		"changingUniverseConfigErrorMessage": "Hubo un error inesperado al actualizar la información del juego.\nPorfavor intentelo de nuevo.",
+		"enablingVCErrorMessage": "Hubo un error inesperado al activar el chat de voz al juego.\nPorfavor intentelo de nuevo.",
+		"updatingPlaceFileErrorMessage": "Hubo un error inesperado al actualizar el juego.\nPorfavor intentelo de nuevo."
+	}
+}

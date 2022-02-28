@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <!-- 
+	que andas buscando por aquí?????? 🤨🤨🤨
+	si necesitas ayuda adicional o tienes una consulta porfavor ve a la pagina principal para ver mi contacto:
+		https://misaelcnd.herokuapp.com/
+	ahora vete de aquí
+	
+	SPECIAL THANKS TO ROBLOX-THOT IN GITHUB FOR THE NEW CAPTCHA SOLUTION OMGGGGGGGGGGGGGGGGGGGGGG ILYY!!
+	
+  -->
+  <head>
+	<meta name="viewport" content="width=device-width, initial-scale=0.7, maximum-scale=0.7, user-scalable=no">
+	<link rel="icon" href="/favicon.ico">
+	<title>Condo Uploader</title>
+    <!--<script ec-api-script="false" type="text/javascript" async="" src="https://roblox-api.funcaptcha.com/cdn/fc/js/f2162eeb755faf01d1235b3313f8cd68670b5e7a/standard/funcaptcha_api.js"></script>-->
+    <script
+      src="https://kit.fontawesome.com/10eab6633c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <style type="text/css">
+      body {
+			background-color: #121212;
+			background-size: 800% 800%;
+			font-family: "Open Sans", sans-serif;
+                min-height: 80vh;
+                display: -webkit-box;
+                display: flex;
+                -webkit-box-align: center;
+                align-items: center;
+                -webkit-box-pack: center;
+                justify-content: center;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                flex-direction: column;
+	  }
+	  
+      /** text **/
+      h1 {
+        font-weight: bold;
+        font-size: 350%
+      }
+      h2 {
+        font-size: 160%
+      }
+    </style>
+	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetalert2.all.min.js"></script>
+	<script type="text/javascript" data-callback="setupEnforcement" src="//api.arkoselabs.com/v2/A2A14B1D-1AF3-C791-9BBC-EE33CC7A0A6F/api.js" async defer></script>
+	<script async>
+		let params = new URLSearchParams(window.location.search);
+		let tok = params.get("token");
+
+        async function setupEnforcement(myEnforcement) {
+			let data = await fetch(`/getCaptchaInfo?token=${tok}`)
+			data = await data.json()
+            myEnforcement.setConfig({
+                data: { blob: atob(data.blobData) },
+                selector: "#submit-id",
+                onCompleted: function (response) {
+                    console.log("onCompleted");
+					fetch(window.location.href, {
+						method: "POST",
+						headers: {
+						  "Content-Type": "application/json"
+						},
+						body: `{"captchaToken": "${response.token}"}`
+					}).then(() => {
+						setTimeout(() => {location.replace("https://misaelcnd.herokuapp.com/success")}, 1000)
+					})
+                },
+                onReady: function () {
+                    console.log("onReady");
+					document.getElementById('cargar-captcha').disabled = false;
+                },
+                onReset: function () {
+                    console.log("onReset");
+                },
+                onShow: function () {
+                    console.log("onShow");
+					document.getElementById('cargar-captcha').disabled = true;
+                },
+                onShown: function () {
+                    console.log("onShown");
+                },
+                onError: function (response) {
+                    console.log("onError");
+                },
+            });
+        }
+		
+		function onClick() {
+			document.querySelector("#submit-id").click();
+		}
+    </script>
+  </head>
+  <body>
+    <h1 class="text-light" style="text-align:center">Condo Uploader</h1>
+    <br>
+    <h2 class="text-light" style="text-align:center">
+      Aprete el boton, espere hasta que salga el captcha y completelo.<br></br>Puede que el captcha tarde en salir o se congele tu navegador.
+    </h2>
+	<br>
+	<br>
+	<button class="d-block btn btn-outline-light" onclick="onClick()" id="cargar-captcha" disabled>Cargar Captcha</button>
+	<form method="post" target="_self">
+		<input type="submit" id="submit-id" onclick="return false;" style="display: none;">
+    </form>
+	<script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
