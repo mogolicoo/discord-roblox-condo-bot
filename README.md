@@ -47,4 +47,4 @@ this was made for an spanish condo server but since i left the server i don't wa
 also you can enable logs when a user gets an error and a user creates a game with the bot
 
 # end
-anyways have fun trying to figure it out on how to make this shit work
+anyways have fun trying to figure how to make this shit work
