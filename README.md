@@ -1,5 +1,5 @@
 # discord-roblox-condo-bot
-a discord bot that uploads roblox condos fully open sourced
+a discord bot that uploads roblox condos fully open sourced written in js
 
 (ugly, old, spaghetti and broken)
 
@@ -29,6 +29,8 @@ it's easy to understand how to add maps also i left there some old maps i don't 
 - games lasts for 5 seconds
 - you can change name and max player count within the bot
 - it's hard to customize
+- some roblox place scrubber that i ported from lua to javascript (if i'm not too lazy to search i'll add credits later to the original dude)
+- uhhh idk, spaghetti code
 
 # fix it
 no, fix it yourself and learn how to setup properly, there are stuff that is broken and i don't want to document it so go ahead and do your work trying to read all this bad and old code.
