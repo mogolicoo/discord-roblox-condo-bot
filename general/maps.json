@@ -1,28 +1,28 @@
 {
 	"cmR6": {
-        "stuff": {
-            "technology": 2,
-            "discordUrl": "https://discord.gg/cuarentenachill2",
-            "socialName": "¡Click aquí para más juegos!",
-			"moduleFileName": "cmr6"
-        },
-        "discordShit": {
-            "label": "11:11 (R6)",
-            "description": "El Juego clasico!",
-            "emoji": "🌆"
-        }
-    },
-	"ccR6": {
-        "stuff": {
+		"stuff": {
 			"technology": 2,
-            "discordUrl": "https://discord.gg/cuarentenachill2",
-            "socialName": "¡Click aquí para más juegos!",
+			"discordUrl": "https://discord.gg/cuarentenachill2",
+			"socialName": "¡Click aquí para más juegos!",
+			"moduleFileName": "cmr6"
+		},
+		"discordShit": {
+			"label": "11:11 (R6)",
+			"description": "El Juego clasico!",
+			"emoji": "🌆"
+		}
+	},
+	"ccR6": {
+		"stuff": {
+			"technology": 2,
+			"discordUrl": "https://discord.gg/cuarentenachill2",
+			"socialName": "¡Click aquí para más juegos!",
 			"moduleFileName": "cuarentenaChill"
-        },
-        "discordShit": {
-            "label": "Cuarentena Chill (R6)",
-            "description": "Un clasico de clasicos.",
-            "emoji": "🌙"
-        }
-    }
+		},
+		"discordShit": {
+			"label": "Cuarentena Chill (R6)",
+			"description": "Un clasico de clasicos.",
+			"emoji": "🌙"
+		}
+    	}
 }
