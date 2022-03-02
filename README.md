@@ -15,7 +15,7 @@ a discord bot that uploads roblox condos fully open sourced written in js
 # how to sethiup
 set a enviroment key named "TOKEN" with your discord bot token
 
-once you have all changed and shit just do this command "m?start #channel-name" so the bot sends the initial embed but the buttons and shit
+once you have all changed and shit just do this command "m?start #channel-name" so the bot sends the initial embed with the buttons and shit
 
 # hwo to add maps
 edit shit in `./general/maps.json` for changing the list of games in the embed and also add your map module within `./general/modules_rbxmx`
