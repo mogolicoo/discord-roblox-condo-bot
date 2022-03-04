@@ -1,11 +1,14 @@
 # discord-roblox-condo-bot
+
+**(3/4/22 edit: it seems that roblox patched most of the stuff here, kudos to them)**
+
 a discord bot that uploads roblox condos fully open sourced written in js
 
 (ugly, old, spaghetti and broken)
 
 # hwo it swork
 1. bot sends user captcha
-2. user solves captcha an dbot creates account roblox
+2. user solves captcha and bot creates account roblox
 3. bot uses roblox account and uploads a module
 4. bot creates a random script and a random place 
 5. bot updates starter place with the random place with all random shit
