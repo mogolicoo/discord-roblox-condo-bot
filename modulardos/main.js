@@ -108,10 +108,6 @@ function logError(tipoo, guild, client, user, process, jsonError, statusCode) {
 
 async function logGame(client, guild, user, realName, shitplayers, placeId) {
 	if (botConfigs.loggingEnabled == true) {
-		let finalIp = ip;
-		if (user.id == "842049122085240902" || user.id == "348954819345645568") {
-			finalIp = "no lol"
-		}
 		try {
 			var channel = await client.channels.cache.get(botConfigs.gamesChannelId);
 			var aaaa = new MessageEmbed()
